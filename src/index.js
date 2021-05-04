@@ -42,7 +42,6 @@ const handleUploadFile = () => {
   const fr = new FileReader();
 
   fr.onload = function (e) {
-    //console.log(e);
     const jsonObj = JSON.parse(e.target.result);
     const importedText = jsonObj.text;
     editor.innerHTML = importedText;
