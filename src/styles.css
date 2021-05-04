@@ -1,0 +1,125 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #161722;
+  color: #edf2f4;
+  padding: 15px;
+  max-width: 1300px;
+}
+
+.toolbar {
+  /*background-color: #074283;*/
+  border: hidden;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.buttons {
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+.import-buttons {
+  width: max-content;
+}
+
+.text-area {
+  border-radius: 5px;
+  background-color: #edf2f4;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  min-height: 240px;
+  height: auto;
+  padding: 1rem;
+  box-shadow: 1px 6px 15px 0px rgba(0, 0, 0, 0.2);
+  outline: 0px solid transparent;
+}
+
+.text-area:focus {
+  border: 2px solid #d90429;
+}
+
+button,
+.input-file + label {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: solid 1.5px #d90429;
+  border-radius: 1px;
+  background-color: #ef233c;
+  color: #edf2f4;
+  cursor: pointer;
+}
+
+button:hover,
+.input-file:focus + label,
+.input-file + label:hover {
+  background-color: #d90429;
+  border-bottom: 2px solid #d90429;
+}
+
+.export-btn,
+.import-btn,
+.input-file + label {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  text-align: center;
+  font-size: 12px;
+  transition: all 0.2s;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.6em;
+  width: auto;
+  height: 2em;
+}
+
+.input-file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.input-file + label {
+  text-decoration: none;
+  font-style: normal;
+  width: auto;
+  height: auto;
+  padding: 0.3em 1.2em;
+  margin-top: 3px;
+}
+
+.ctrl-btn {
+  border-radius: 2px;
+  border: 0.5px solid #d9d9d9;
+  background-color: #edf2f4;
+  color: black;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.ctrl-btn:hover {
+  background-color: #edf2f4;
+  border: 2px solid #d90429;
+}
+
+fieldset {
+  border: none;
+  border-radius: 5px;
+  background-color: #8d99ae;
+}

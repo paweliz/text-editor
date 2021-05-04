@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+
+  <body>
+    <fieldset>
+      <div id="control-buttons" class="toolbar">
+        <button title="Bold" class="ctrl-btn"><b>B</b></button>
+        <button title="Italics" class="ctrl-btn"><i>I</i></button>
+        <button title="Unordered List" class="ctrl-btn">Ul</button>
+      </div>
+      <div class="text-area" id="textarea" contenteditable="true"></div>
+      <div class="buttons">
+        <div class="save">
+          <button id="export-btn" class="export-btn">export text</button>
+        </div>
+        <div class="import-buttons">
+          <input type="file" id="file" class="input-file" accept=".json" />
+          <label for="file">choose a file</label>
+          <button class="import-btn" id="import-btn">
+            import text
+          </button>
+        </div>
+      </div>
+    </fieldset>
+    <div>
+      <h3>***README***</h3>
+      <p>1) To write text just click on white field and type.</p>
+      <p>
+        2) To style text just click on given button and the text will be
+        stylized with chosen option.
+      </p>
+      <p>
+        3) To export file click on "export text" button and file
+        "saved-text.JSON" will be downloaded.
+      </p>
+      <p>
+        4) To import file click on "choose file" button, select and choose .JSON
+        file. After that, click "import text" button and content of .JSON file
+        will appear in the box. The JSON file should have property "text",
+        otherwise, there will appear 'undefined' text.
+      </p>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
