@@ -1,3 +1,11 @@
+/* 
+Possible improvements:
+* marking whether text option buttons are active or not 
+* disabling import text button before chosing file to import
+* adding another text option buttons i.e. text size change, copy, cut, URL
+
+*/
+
 const editor = document.querySelector(".text-area");
 const boldBtn = document.querySelector('[title="Bold"]');
 const italicBtn = document.querySelector('[title="Italics"]');
